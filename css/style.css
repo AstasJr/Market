@@ -9,24 +9,28 @@ border: 0 none;
 outline: 0;
 padding: 0;
 margin: 0;
-} 
+}
+
 html {
 	height: 100%;
 	font-size: 100%;
 }
-
 body {
-	font-size: 14/20px;
+	font-size: 14px;
 	font-family: 'Raleway-Medium';
 	width: 100%;
 	height: 100%;
 	color: #6c6c6c;
-	background: #b8b8b8;
+	background: #FFF;
 }
-
 a {color: #414141;}
 a:hover {color: #f06060; text-decoration: none}
 li {list-style: none;}
+h1 {font-size: 32px; font-family: 'Raleway-Bold';}
+h3 {font-size: 18px; font-family: 'Raleway-SemiBold';}
+h5 {font-size: 15px; font-family: 'Raleway-SemiBold'; color: #FFF; padding-top: 10px; text-align: left;}
+h6 {font-size: 15px; font-family: 'Raleway-SemiBold'; color: #6c6c6c;}
+span {color: #f06060; font-size: 16px; font-family: 'Raleway-Bold';}
 
 .h-panel {
 	background-color: #f06060;
@@ -34,6 +38,8 @@ li {list-style: none;}
 .h-nav {
 	float: left;
 	padding: 10px 0;
+	font-family: 'Raleway-SemiBold';
+	font-size: 12px;
 }
 .h-nav a {
 	margin-right: 33px;
@@ -41,7 +47,7 @@ li {list-style: none;}
 	color: white;
 }
 .h-nav a:hover {
-	color: black;
+	
 }
 .pull-right a {
 	margin-right: 0;
@@ -60,24 +66,679 @@ li {list-style: none;}
 	background: url('../img/icon3.png') no-repeat left;
 } 
 
+/* header-bottom */
+
 .header-bottom {
-	padding: 40px 0 30px 0;
+	background-color: white;
+	border-bottom: 1px solid #b8b8b8;
+	font-size: 13px;
+	font-family: 'Raleway-SemiBold';
+	color: #999999;
 }
-
-.col-md-3 {
-	padding-top: 0.5%;
+.logo {
+	height: 120px;
+	line-height: 120px;
 }
-.col-md-3 img {
-	margin-left: 11%;
-	float: left;
+.contact {
+	height: 120px;
+	line-height: 20px;
+	padding-top: 40px;
 }
-
-.col-md-3 ul {
+.contact ul {
+	border-left: 1px solid #b8b8b8;
+	padding-left: 8%;
+}
+.phone {
+	background: url('../img/phone.png') no-repeat 8% 53%;
 	padding-left: 6%;
-	margin-left: 7%;
-	border-left: 2px solid;
+}
+.email {
+	background: url('../img/email.png') no-repeat 26% 53%;
+}
+
+/* panel */
+
+.panel {
+	height: 60px;
+	line-height: 60px;
+	font-family: 'Raleway-SemiBold';
+	font-size: 16px;
+	color: #565656;
+	margin-bottom: 10px;
+	box-shadow: 0 10px 8px -5px rgba(0, 0, 0, 0.5);
+}
+.acces {
+	padding: 0;
+}
+.women {
+	padding: 0;
+}
+.cart {
+	margin-top: 13px;
+	line-height: 30px;
+	border: 1px solid #b8b8b8;
+	border-radius: 4px;
+	background: url('../img/cart.png') no-repeat 3%;
+	padding-left: 18%;
+	font-size: 12px;
+	font-family: 'Raleway-Regular';
+	color: #999999;
+	width: 100%;
+}
+.cart span {
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 16px;
+	color: #6c6c6c;
+	font-family: 'Raleway-SemiBold';
+}
+.my_search {
+	margin-top: 13px;
+	line-height: 30px;
+	border: 1px solid #b8b8b8;
+	border-radius: 4px;
+	padding-left: 8%;
+	padding-right: 8%;
+	font-size: 12px;
+	font-family: 'Raleway-Bold';
+	color: #bbbbbb;
+	width: 100%;
+}
+.panel input {
+	background: url('../img/search.png') no-repeat 100%;
+	width: 100%;
+}
+
+/* slider */
+
+.slider {
+	height: 620px;
+	background: url('../img/bg1.png');
+}
+.capt {
+	height: 620px;
+}
+.left {
+	position: absolute;
+	top: 450px;
+	left: 2%;
+	cursor: pointer;
+}
+.right {
+	position: absolute;
+	top: 450px;
+	left: 93%;
+	cursor: pointer;
+}
+.capt1 {
+	position: relative;
+	left: 15%;
+}
+.shirt1 {
+	position: relative;
+	top: 80px;
+	left: -8%;
+}
+.capt2 {
+	position: relative;
+	top: -180px;
+}
+.shirt2 {
+	position: relative;
+	left: -28%;
+}
+.capt3 {
+	position: relative;
+}
+.shirt3 {
+	position: relative;
+	top: 80px;
+	left: -33%;
+}
+
+/* products */
+
+.products {
+	height: 1400px;
+	background: url('../img/round-top.png');
+}
+.nav {
+	height: 170px;
+}
+.nav h1 {
+	margin-top: 60px;
+	height: 70px;
+	line-height: 70px;
+	float: left;
+	padding-right: 9%;
+	font-family: 'Raleway-SemiBold';
+}
+.tabs {
+	width: 100%;
+}
+.active1 {
+	position: relative;
+	left: 7%;
+	top: -40px;
+}
+.inactive {
+	position: relative;
+	top: -40px;
+	left: 30%;
+}
+.active2 {
+	position: relative;
+	top: -40px;
+	left: 50%;
+}
+.product {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background: #FFF;
+	border-radius: 10px;
+	height: 300px;
+}
+.p-shirt {
+	height: 175px;
+	position: relative;
+	left: 3%;
+}
+.product h3 {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 2px solid #b8b8b8;
+	margin: 0;
+}
+.p-left {
+	text-align: center;
+	border-right: 2px solid #b8b8b8;
+	margin-top: 20px;
+}
+.p-left h1 {
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	color: #f06060;
+}
+.p-left p {
+	margin: 0;
+	font-family: 'Raleway-Regular';
+	font-size: 14px;
+	color: #999999;
+}
+.p-right {
+	padding: 0 4%;
+}
+.p-right button {
+	margin-top: 25px;
+	width: 100%;
+	height: 45px;
+	background-color: #f06060;
+	color: white;
+	border-radius: 10px;
+}
+.inform {
+	height: 70px;
+}
+.line {
+	height: 9px;
+	border-top: 5px solid #b8b8b8;
+	border-bottom: 5px solid #b8b8b8;
+	border-radius: 5px;
+}
+.offer {
+	margin-top: 40px;
+	background: #FFF;
+	border-radius: 5px;
+	height: 150px;
+}
+.offer img {
+	margin-top: 45px;
+	margin-left: 10%;
+}
+.offer span {
+	cursor: pointer;
+}
+.offer p {
+	font-family: 'Raleway-Regular';
+	font-size: 13px;
+}
+#sale {
+	margin-top: 40px;
+}
+#dollar {
+	margin-left: 30%;
+}
+
+/* footer */
+
+.footer {
+	height: 680px;
+	background: #2f2f2f;
+}
+.footer img {
+	cursor: pointer;
+}
+.my_form {
+	position: absolute;
+	left: 25%;
+	height: 130px;
+	width: 50%;
+	margin-top: 50px;
+	background: #FFF;
+	border-radius: 10px;
+	z-index: 2;
+}
+.my_form input {
+	height: 50px;
+	border: 1px solid #b8b8b8;
+	border-radius: 10px;
+	width: 65%;
+	margin: 40px 5%;
+	font-family: "Raleway-Light";
+	font-size: 13px;
+	padding-left: 10px;
 	float: left;
 }
-.email img {
-	padding-top: 2%;
+.my_form button {
+	height: 50px;
+	color: #FFF;
+	background-color: #f06060;
+	width: 20%;
+	border-radius: 10px;
+	font-family: 'Raleway-SemiBold';
+	font-size: 14px;
+	margin: 40px 5% 40px 0;
+	float: left;
+}
+.shopmint {
+	margin-top: 80px;
+}
+.shopmint h1 {
+	color: #FFF;
+	border-bottom: 5px solid #6c6c6c;
+	padding-bottom: 15px;
+}
+.shopmint p{
+	padding-top: 10px;
+	font-family: 'Raleway-Regular';
+	font-size: 13px;
+}
+.best {
+	margin-top: 80px;
+}
+.best h1 {
+	color: #FFF;
+	border-bottom: 5px solid #6c6c6c;
+	padding-bottom: 15px;
+}
+.best p{
+	padding-top: 10px;
+	font-family: 'Raleway-Regular';
+	font-size: 13px;
+}
+.just {
+	margin-top: 80px;
+}
+.just h1 {
+	color: #FFF;
+	border-bottom: 5px solid #6c6c6c;
+	padding-bottom: 15px;
+}
+.just p{
+	padding-top: 10px;
+	font-family: 'Raleway-Regular';
+	font-size: 13px;
+}
+.point {
+	width: 100%;
+	height: 160px;
+	border-bottom: 1px solid #6c6c6c;
+}
+.point img {
+	margin-top: 25px;
+	margin-left: -15px;
+}
+#c_799 {
+	margin-top: 35px;
+	color: #f06060;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+}
+.footer_line {
+	height: 40px;
+	line-height: 40px;
+	font-family: 'Raleway_Regular';
+	background: #262626;
+}
+.footer_line p {
+	font-size: 12px;
+	color: #505050;
+}
+.footer_line span {
+	color: #f06060;
+	font-size: 12px;
+}
+
+@media (max-width: 1199px) {
+	.header-bottom {
+		font-size: 11px;
+	}
+	.cart {
+		font-size: 10px;
+		background-size: 16%;
+	}
+	.cart span {
+		font-size: 12px;
+	}
+	.p-shirt {
+		left: -8%;
+	}
+	.offer h3 {
+		font-size: 15px;
+	}
+	.offer p {
+		font-size: 13px;
+	}
+	.my_form input {
+		font-size: 10px;
+	}
+	.my_form button {
+		font-size: 12px;
+	}
+	/*.slider {
+		height: 625px;
+	}*/
+	.capt1 {
+		position: relative;
+		left: 15%;
+	}
+	.shirt1 {
+		position: relative;
+		top: 80px;
+		left: -13%;
+	}
+	.capt2 {
+		position: relative;
+		top: -180px;
+		left: -5%;
+	}
+	.shirt2 {
+		position: relative;
+		left: -40%;
+	}
+	.shirt3 {
+		position: relative;
+		top: 80px;
+		left: -42%;
+	}
+	.products {
+		height: 1345px;
+	}
+	.nav h1 {
+		padding-right: 6%;
+	}
+	.active1 {
+		left: 6.8%;
+		top: -38px;
+	}
+	.inactive {
+		top: -38px;
+		left: 28.2%;
+	}
+	.active2 {
+		top: -38px;
+		left: 47%;
+	}
+}
+
+@media (max-width: 991px) {
+	.contact ul {
+		border-left: 1px solid #b8b8b8;
+		padding-left: 4%;
+	}
+	.phone {
+		background: url('../img/phone.png') no-repeat 0% 53%;
+		padding-left: 5%;
+	}
+	.email {
+		background: url('../img/email.png') no-repeat 0% 53%;
+		padding-left: 6%;
+	}
+	.panel {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.cart {
+		background-size: 13%;
+		padding-left: 17%;
+		font-size: 8px;
+		width: 100%;
+	}
+	.cart span {
+		font-size: 10px;
+	}
+	.my_search {
+		font-size: 11px;
+	}
+	.row1 {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	.slider {
+		height: 475px;
+	}
+	.capt {
+		height: 500px;
+	}
+	.capt1 {
+		left: 18%;
+	}
+	.shirt1 {
+		left: -10%;
+		width: 300px;
+	}
+	.capt2 {
+		left: -4%;
+		width: 260px;
+	}
+	.shirt2 {
+		left: -44%;
+		width: 500px;
+	}
+	.capt3 {
+		left: -21%; 
+	}
+	.shirt3 {
+		left: -63%;
+		width: 300px;
+	}
+	.right {
+		left: 92%;
+	}
+	.products {
+		height: 1165px;
+	}
+	.nav {
+		height: 160px;
+	}
+	.nav h1 {
+		height: 40px;
+		line-height: 40px;
+		font-size: 24px;
+		padding-right: 4%;
+	}
+	.active1 {
+		position: relative;
+		left: 7.1%;
+		top: -30px;
+		width: 34px;
+	}
+	.inactive {
+		position: relative;
+		top: -30px;
+		left: 28.9%;
+		width: 34px;
+	}
+	.active2 {
+		position: relative;
+		top: -30px;
+		left: 47.9%;
+		width: 34px;
+	}
+	.product {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background: #FFF;
+		border-radius: 10px;
+		height: 240px;
+	}
+	.product img {
+		width: 200px;
+	}
+	.p-shirt {
+		height: 140px;
+		position: relative;
+		left: -12%;
+	}
+	.product h3 {
+		height: 38px;
+		line-height: 38px;
+	}
+	.p-left {
+		margin-top: 6px;
+	}
+	.p-left h1 {
+		height: 30px;
+		line-height: 30px;
+		font-size: 24px;
+	}
+	.p-right button {
+		margin-top: 12px;
+		padding-left: 2%;
+		padding-right: 2%;
+		height: 38px;
+		border-radius: 8px;
+		font-size: 11px;
+	}
+	.offer {
+		margin-top: 40px;
+		background: #FFF;
+		border-radius: 5px;
+		height: 150px;
+	}
+	.offer img {
+		margin-top: 45px;
+		margin-left: 4%;
+	}
+	.offer span {
+		cursor: pointer;
+	}
+	.offer p {
+		font-family: 'Raleway-Regular';
+		font-size: 11px;
+	}
+	.lorem {
+		height: 72px;
+	}
+	.footer {
+		height: 580px;
+	}
+	.shopmint p{
+		padding-top: 10px;
+		font-family: 'Raleway-Regular';
+		font-size: 13px;
+	}
+	.best h1 {
+		padding-bottom: 15px;
+		margin-bottom: 0;
+	}
+	.best h6 {
+		font-size: 13px;
+		text-align: center;
+	}
+	.best p{
+		padding-top: 0;
+		font-size: 11px;
+	}
+	.just {
+		margin-top: 80px;
+	}
+	.just h1 {
+		padding-bottom: 15px;
+		margin-bottom: 0;
+	}
+	.just h6 {
+		font-size: 13px;
+		text-align: center;
+	}
+	.just p{
+		padding-top: 0;
+		font-size: 11px;
+	}
+	.point {
+		height: 130px;
+	}
+	.point img {
+		width: 110px;
+		margin-top: 23px;
+		margin-left: -23px;
+	}
+	#c_799 {
+		margin-top: 28px;
+		font-size: 24px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding-bottom: 0;
+	}
+	.footer_line {
+		height: 30px;
+		line-height: 30px;
+		font-family: 'Raleway_Regular';
+		background: #262626;
+	}
+	.footer_line p {
+		font-size: 10px;
+	}
+	.footer_line span {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.slider {
+		height: 475px;
+	}
+	.capt {
+		height: 500px;
+	}
+	.capt2 {
+		top: -220px;
+		left: 30%;
+		width: 300px;
+	}
+	.shirt2 {
+		left: 10%;
+		width: 600px;
+	}
+	.right {
+		left: 90%;
+	}
+	.product img {
+		width: 200px;
+	}
+	.p-shirt {
+		height: 140px;
+		position: relative;
+		left: 36%;
+	}
+	.products {
+		height: 1405px;
+	}
+	.footer {
+		height: 1420px;
+	}
 }
